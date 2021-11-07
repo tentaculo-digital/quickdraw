@@ -1,0 +1,18 @@
+{
+  "name": "@quickdraw/react-core-dev",
+  "version": "0.0.1",
+  "description": "tools to config react development",
+  "main": "./src/index.js",
+  "type": "module",
+  "bin": {
+    "qd-react": "./bin/index.js"
+  },
+  "scripts": {
+    "setup": "yarn",
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

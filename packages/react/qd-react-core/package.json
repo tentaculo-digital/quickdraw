@@ -1,0 +1,12 @@
+{
+  "name": "@quickdraw/react-core",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "qd-react": "./bin/index.js"
+  },
+  "scripts": {
+    "setup": "yarn",
+    "core-test": "node teste.js"
+  }
+}
