@@ -1,6 +1,6 @@
 {
   "name": "@quickdraw/react-core-dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "tools to config react development",
   "main": "./src/index.js",
   "type": "module",
