@@ -1,10 +1,15 @@
-import path from "path"
+import fs from "fs";
+import path from "path";
+import glob from "glob";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin"
+import PurgecssPlugin from "purgecss-webpack-plugin";
 
 const PATHS = {
   src: path.resolve(process.env.PWD, "dist")
 }
 
-const createBundle = (config = {}) => {
+const generateWebpack = (config = {}) => {
   return {
     mode: "development",
     entry: {
@@ -64,7 +69,7 @@ const createBundle = (config = {}) => {
       }),
     ],
     devServer: {
-      contentBase: "./dist",
+      static: "./dist",
       host: "0.0.0.0",
       port: 9000,
       https: {
@@ -84,4 +89,4 @@ const createBundle = (config = {}) => {
   };
 };
 
-export default createBundle
+export default generateWebpack

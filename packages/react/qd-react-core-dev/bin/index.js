@@ -13,7 +13,11 @@ const execAsync = (query) => {
 };
 
 const start = async () => {
-  await execAsync(`yarn core-dev`)
+  await execAsync(`
+    wget -O mkcert $(curl --silent "https://api.github.com/repos/FiloSottile/mkcert/releases/latest"  | grep -Eo 'https.*linux-amd64')
+    chmod +x mkcert
+    mv mkcert /usr/local/bin
+  `)
 }
 
 start();

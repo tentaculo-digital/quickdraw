@@ -1,7 +1,7 @@
 {
-  "name": "public",
+  "name": "quickdraw",
+  "version": "0.0.1",
   "packageManager": "yarn@3.1.0",
-  "private": true,
   "workspaces": [
     "packages/react/*"
   ]

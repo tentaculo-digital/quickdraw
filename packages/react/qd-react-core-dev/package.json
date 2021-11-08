@@ -9,10 +9,20 @@
   },
   "scripts": {
     "setup": "yarn",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "core-dev": "node ./teste.js"
   },
   "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "purgecss-webpack-plugin": "^4.0.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "webpack": "^5.62.1",
+    "webpack-dev-server": "^4.4.0"
   }
 }

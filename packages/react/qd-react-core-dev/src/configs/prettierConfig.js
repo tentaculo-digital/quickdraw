@@ -1,4 +1,8 @@
-export default {
-  tabWidth: 2,
-  semi: false,
+const generatePrettier = () => {
+  return {
+    tabWidth: 2,
+    semi: false,
+  };
 };
+
+export default generatePrettier;
